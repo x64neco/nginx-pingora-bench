@@ -1,0 +1,8 @@
+/target/
+/.reference/
+/results/
+/www/
+/logs/
+__pycache__/
+.env
+/*.log

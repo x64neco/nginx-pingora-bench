@@ -1,0 +1,18 @@
+[package]
+name = "pingora-static-bench"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+async-trait = "0.1"
+module-utils = "=0.2.0"
+pingora-core = "=0.2.0"
+pingora-proxy = "=0.2.0"
+static-files-module = "=0.2.0"
+# Pingora 0.2 declares sfv="0" but uses the pre-0.10 API.
+sfv = "=0.9.4"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
