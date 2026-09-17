@@ -88,7 +88,6 @@ ab -k -n 100000 -c 32 http://127.0.0.1:8081/64k.bin
 - `Non-2xx responses`：表示なし
 - `Requests per second`：RPSを比較
 - `Transfer rate`：ヘッダー込みの転送量。表示値を1024で割るとMiB/s
-- 同じコマンドを数回実行し、値のばらつきを確認
 
 ## 条件変更
 - ファイルサイズ：両方のURLを`1k.bin`または`1m.bin`に変更
