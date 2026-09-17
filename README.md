@@ -96,7 +96,5 @@ ab -k -n 100000 -c 32 http://127.0.0.1:8081/64k.bin
 ## 比較条件の確認
 
 - Pingora 0.2.0 + static-files-module 0.2.0（最新Pingoraの比較ではない）
-- 両方ともworker数1、圧縮OFF、アクセスログOFF、配信元`www/`
-- nginxは初期設定で`sendfile on`
 - 同じファイルを繰り返す、OSキャッシュが温まった状態の計測
 
