@@ -10,7 +10,6 @@ git clone <リポジトリのURL> pingora-static
 cd pingora-static
 ```
 
-確認：rustup導入済み。未導入の場合は https://rustup.rs/ を参照。
 
 ```bash
 cargo build --release --locked
@@ -25,7 +24,6 @@ nginx -v
 ab -V
 ```
 
-確認：ビルド成功。ファイルサイズはそれぞれ1,024 / 65,536 / 1,048,576 bytes。
 
 ## 起動
 
@@ -43,7 +41,6 @@ ab -V
 LISTEN_ADDR=0.0.0.0:18080 ./target/release/pingora-static-bench
 ```
 
-確認：ポート変更時は以降のcurl・abのURLも変更。
 
 ターミナル2：nginx
 
